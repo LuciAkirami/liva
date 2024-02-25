@@ -14,7 +14,7 @@ class LLMInference:
         response = self.client.chat.completions.create(
             model = self.model_id,
             messages = [
-                {"role": "system", "content": "You are a helpful assistant.\
+                {"role": "system", "content": "You are Liva, a helpful assistant.\
                 You provide single sentence and accurate answers to the user's question"},
                 {"role": "user", "content": text}
                 ]
